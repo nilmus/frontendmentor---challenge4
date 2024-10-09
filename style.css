@@ -42,7 +42,7 @@ body {
 }
 
 .wrapper {
-    max-width: 700px;
+    max-width: 720px;
     margin: 120px auto;
     padding: 2em;
     font-family: var(--font-family-2);
@@ -68,8 +68,12 @@ body {
 
 .description {
     color: var(--stone-600);
-    font-size: 0.9375em;
+    line-height: 1.5em;
     margin-bottom: 2em;
+}
+
+li {
+    font-weight: 300;
 }
 
 .li-strong {
@@ -85,14 +89,20 @@ body {
 
 .preparation-time-title {
     color: var(--rose-800);
-    font-weight: var(--font-weight-2-700);
+    font-family: var(--font-family-2);
+    font-weight: var(--font-weight-2-600);
+    font-size: large;
     margin-bottom: 0.5em;
 }
 
 .preparation-time-list {
-    list-style-position: inside;
+    list-style-position: outside;
     line-height: 2em;
-    padding-left: 0.5em;
+    padding-left: 1.5em;
+}
+
+.preparation-time-list li {
+    padding-left: 1em;
 }
 
 .preparation-time-list li::marker {
@@ -106,9 +116,13 @@ body {
 }
 
 .ingredients-list {
-    list-style-position: inside;
+    list-style-position: outside;
     line-height: 2em;
-    padding-left: 0.5em;
+    padding-left: 1em;
+}
+
+.ingredients-list li {
+    padding-left: 1em;
 }
 
 .ingredients-list li::marker {
@@ -117,13 +131,15 @@ body {
 
 hr {
     border-width: 0.5px;
+    border-color: var(--stone-150);
+    border-style: solid;
     margin: 2em 0;
 }
 
 .instructions-list {
-    list-style-position: inside;
+    list-style-position: outside;
     line-height: 1.5em;
-    padding-left: 0.5em;
+    padding-left: 1.5em;
 }
 
 .instructions-list li::marker {
@@ -133,11 +149,11 @@ hr {
 
 .instructions-list li {
     margin: 0.5em 0;
+    padding-left: 1em;
 }
 
 .table-description {
     color: var(--stone-600);
-    font-size: 0.9375em;
     margin: 2em 0;
 }
 
@@ -148,7 +164,7 @@ hr {
 }
 
 .nutrition-table tr {
-    border-bottom: 0.5px solid var(--stone-900);
+    border-bottom: 1px solid var(--stone-150);
     height: 2em;
 }
 
